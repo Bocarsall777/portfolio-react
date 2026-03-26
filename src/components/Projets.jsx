@@ -5,10 +5,10 @@ import shop from "../assets/images/shop.png";
 
 function Projects() {
   const projects = [
-    { image: baba, title: "Projet Baba" },
-    { image: html, title: "Site HTML" },
-    { image: sall, title: "Portfolio Sall" },
-    { image: shop, title: "E-commerce" },
+    { image: baba, title: "Montage photoshop" },
+    { image: html, title: "Portofolio" },
+    { image: sall, title: "projet Laravel" },
+    { image: shop, title: "projet React" },
   ];
 
   return (

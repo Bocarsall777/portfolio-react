@@ -19,8 +19,8 @@ function Contact() {
       </form>
 
       <div className="contact-info">
-        /*<p>📧 Email : bocar9715sall@gmail.com</p>
-        <p>📱 WhatsApp : +221 77185595</p>
+        /*<p> Email : bocar9715sall@gmail.com</p>
+        <p> WhatsApp : +221 77185595</p>
         <p>📍 Sénégal</p>
       </div>
     </div>
