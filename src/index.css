@@ -427,42 +427,39 @@ footer {
 }
 
 
-
 .about-section {
   position: relative;
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 80px 20px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 100px 20px 40px 20px; /* padding-top plus grand pour la navbar */
 }
 
 .about-section .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre pour lisibilité */
-  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
   border-radius: 15px;
   max-width: 800px;
+  margin: 0 auto; /* centrer horizontalement */
 }
 
+/* Titres et texte */
 .about-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .about-section h3 {
-  font-size: 1.5rem;
-  margin-top: 30px;
+  font-size: 1.4rem;
+  margin-top: 25px;
   margin-bottom: 15px;
 }
 
 .about-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .about-section ul {
@@ -472,12 +469,37 @@ footer {
 
 .about-section ul li {
   background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 10px;
-  padding: 8px 12px;
+  margin-bottom: 8px;
+  padding: 6px 10px;
   border-radius: 8px;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 8px;
   font-weight: 500;
+}
+
+/* Responsive pour écrans ≤ 600px */
+@media (max-width: 600px) {
+  .about-section {
+    padding-top: 80px; /* laisser de la place pour navbar */
+    padding-bottom: 20px;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+  }
+
+  .about-section ul li {
+    display: block; /* empiler les badges sur mobile */
+    margin-right: 0;
+  }
 }
 
 
