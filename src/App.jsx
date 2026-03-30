@@ -3,8 +3,9 @@ import Acceuil from "./Pages/Acceuil";
 import ContactPages from "./Pages/ContactPages"; 
 import ConpetencesPages from "./Pages/CompetencesPages";
 import ProjetsPages from "./Pages/ProjetsPages";
-import About from "./Pages/About"; // <-- ajout About
+import ProjectDetails from "./Pages/ProjectDetails"; // ✅ ajout
 
+import About from "./Pages/About";
 import Layout from "./Pages/Layout";
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
         { path: "/contact", element: <ContactPages /> },
         { path: "/conpetences", element: <ConpetencesPages /> },
         { path: "/projets", element: <ProjetsPages /> },
-        { path: "/about", element: <About /> }, // <-- route About
+        { path: "/about", element: <About /> },
+
+        { path: "/project/:id", element: <ProjectDetails /> }, // ✅ ici
       ],
     },
   ]);

@@ -427,78 +427,95 @@ footer {
 }
 
 
+
 .about-section {
-  position: relative;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px;
+  background-color: #1f2235;
   color: #fff;
-  padding: 100px 20px 40px 20px; /* padding-top plus grand pour la navbar */
+  font-family: Arial, sans-serif;
 }
 
-.about-section .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 800px;
-  margin: 0 auto; /* centrer horizontalement */
+.about-section img {
+  width: 350px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #fff;
 }
 
-/* Titres et texte */
-.about-section h2 {
-  font-size: 2.2rem;
+.about-right {
+  max-width: 600px;
+}
+
+.about-right h1 {
+  font-size: 36px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.about-section h3 {
-  font-size: 1.4rem;
-  margin-top: 25px;
+.about-right h2 {
+  font-size: 28px;
+  margin-top: 30px;
   margin-bottom: 15px;
+  color: #ffd700;
 }
 
-.about-section p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 12px;
+.about-right p {
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.about-section ul {
-  list-style-type: none;
+.about-right ul {
+  list-style: none;
   padding: 0;
 }
 
-.about-section ul li {
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 8px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-right: 8px;
-  font-weight: 500;
+.about-right li {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-/* Responsive pour écrans ≤ 600px */
-@media (max-width: 600px) {
+
+
+
+
+
+
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
   .about-section {
-    padding-top: 80px; /* laisser de la place pour navbar */
-    padding-bottom: 20px;
+    flex-direction: column; /* Image et texte en colonne */
+    padding: 40px 20px;
+    gap: 30px;
   }
 
-  .about-section h2 {
-    font-size: 1.8rem;
+  .about-section img {
+    width: 80%;        /* L'image prend moins de place */
+    height: auto;      /* Hauteur automatique pour garder les proportions */
+    border: 2px solid #fff;
+    border-radius: 10px;
   }
 
-  .about-section h3 {
-    font-size: 1.2rem;
+  .about-right {
+    max-width: 100%;
+    text-align: center; /* Texte centré sur mobile */
   }
 
-  .about-section p {
-    font-size: 0.95rem;
+  .about-right h1 {
+    font-size: 28px;
   }
 
-  .about-section ul li {
-    display: block; /* empiler les badges sur mobile */
-    margin-right: 0;
+  .about-right h2 {
+    font-size: 22px;
+  }
+
+  .about-right li {
+    font-size: 16px;
   }
 }
 
@@ -506,3 +523,57 @@ footer {
 
 
 
+
+
+
+
+
+.project-details {
+  padding: 80px 20px;
+  background-color: #1f2235;
+  color: white;
+}
+
+/* Image responsive */
+.project-details img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Texte */
+.project-details p {
+  font-size: 16px;
+}
+
+/* Technologies */
+.project-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-details ul li {
+  background: #333;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .project-details {
+    padding: 60px 10px;
+  }
+
+  .project-details h2 {
+    font-size: 18px;
+  }
+
+  .project-details p {
+    font-size: 14px;
+  }
+
+  .project-details ul li {
+    display: block; /* met en colonne */
+  }
+}
