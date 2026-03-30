@@ -1,34 +1,103 @@
-/* ===================== NAVBAR ===================== */
-nav {
-  height: 10vh;
-  background-color: #1f2235;
+/* Navbar général */
+.nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 30px;
+  background-color: #1f2235;
+  color: white;
+  position: relative;
+  justify-content: space-between;
 }
 
+/* Logo à gauche */
 .logo {
-  color: orange;
+  font-size: 24px;
+  font-weight: bold;
+  color:orange;
 }
 
-.lol {
+/* Liens centrés */
+.links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
-/* Liens navbar */
-.lol a {
-  color: white;          /* texte en blanc */
-  text-decoration: none; /* supprime le soulignement */
+.links a {
+  text-decoration: none;
+  color: white;
   font-weight: 500;
   transition: color 0.3s;
 }
 
-.lol a:hover {
-  color: #ff8c00; /* orange comme le logo */
+.links a:hover {
+  color: #ff6600;
 }
 
+/* About bouton à droite */
+.about-button {
+  text-decoration: none;
+  color: white;
+  background-color: #ff6600;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.about-button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+/* Burger pour mobile */
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+/* Menu mobile */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #1f2235;
+  padding: 15px;
+  border-radius: 8px;
+  gap: 10px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu.show {
+  transform: translateX(0);
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.mobile-menu a:hover {
+  color: #ff6600;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .links {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
 /* =================== FOND PRINCIPAL =================== */
 .hero {
   background-color: #1f2235;
@@ -163,6 +232,7 @@ footer {
   margin: auto;
   text-align: center;
   padding: 40px;
+  
 }
 
 .contact-form {
@@ -199,6 +269,7 @@ footer {
 /* PROJECTS */
 .projects {
   text-align: center;
+  
 }
 
 .projects-container {
@@ -257,10 +328,14 @@ footer {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: flex;
     align-items: flex-start;
     height: auto;
     padding: 15px 20px;
+  }
+
+  .menu_lien {
+    display: flex;
   }
 
   .lol {
@@ -350,3 +425,8 @@ footer {
     padding: 20px 10px;
   }
 }
+
+
+
+
+

@@ -1,13 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Acceuil from "./Pages/Acceuil";
 import ContactPages from "./Pages/ContactPages"; 
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Conpetences from "./components/Competences";
 import ConpetencesPages from "./Pages/CompetencesPages";
-import Projets from "./components/Projets"
-import ProjetsPages from "./Pages/ProjetsPages"
+import ProjetsPages from "./Pages/ProjetsPages";
+import About from "./Pages/About"; // <-- ajout About
+
 import Layout from "./Pages/Layout";
 
 function App() {
@@ -16,16 +13,12 @@ function App() {
       element: <Layout />,
       children: [
         { path: "/", element: <Acceuil /> },
-        { path: "/contact", element: <ContactPages /> } ,
-
-        { path: "/conpetences", element: <ConpetencesPages /> } ,
-
-        { path: "/Projets", element: <ProjetsPages /> } 
-         
-        
-
-      ]
-    }
+        { path: "/contact", element: <ContactPages /> },
+        { path: "/conpetences", element: <ConpetencesPages /> },
+        { path: "/projets", element: <ProjetsPages /> },
+        { path: "/about", element: <About /> }, // <-- route About
+      ],
+    },
   ]);
 
   return <RouterProvider router={router} />;
