@@ -428,5 +428,59 @@ footer {
 
 
 
+.about-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section .overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre pour lisibilité */
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-section ul li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+
+
 
 
