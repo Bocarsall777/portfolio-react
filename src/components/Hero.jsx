@@ -1,5 +1,5 @@
 import React from "react";
-import bocar from "../assets/images/bocar.jpeg";
+import ninho from "../assets/images/ninho.jpeg";
 
 function Hero() {
   return (
@@ -25,7 +25,7 @@ Mon objectif est de devenir un bon développeur et de réaliser des projets util
       </div>
 
       <div className="right">
-        <img src={bocar} alt="BocarDev" />
+        <img src={ninho} alt="BocarDev" />
       </div>
 
     </div>

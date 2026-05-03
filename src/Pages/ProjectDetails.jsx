@@ -3,6 +3,7 @@ import baba from "../assets/images/baba.png";
 import html from "../assets/images/html.png";
 import sall from "../assets/images/sall.png";
 import shop from "../assets/images/shop.png";
+import isep from "../assets/images/isep.png";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -36,6 +37,25 @@ function ProjectDetails() {
       desc: "Application web moderne développée avec React.",
       tech: ["React", "JavaScript" , "Css"],
     },
+
+
+
+     {
+      id: 5,
+      image: isep,
+      title: "Projet Figma",
+      desc: "Un projet Figma pensé avec créativité, simplicité et expérience utilisateur.",
+
+      tech: ["figma"],
+    },
+
+
+    
+
+
+
+    
+
   ];
 
   const project = projects.find((p) => p.id === parseInt(id));

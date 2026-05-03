@@ -19,7 +19,7 @@ function About() {
 
          <h2>Compétences</h2>
         <ul>
-          <li>React</li>
+          <li>React </li>
           <li>JavaScript (ES6+)</li>
           <li>HTML & CSS</li>
           <li>Git & GitHub</li>

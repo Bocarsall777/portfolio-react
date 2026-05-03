@@ -3,6 +3,7 @@ import baba from "../assets/images/baba.png";
 import html from "../assets/images/html.png";
 import sall from "../assets/images/sall.png";
 import shop from "../assets/images/shop.png";
+import isep from "../assets/images/isep.png";
 
 function Projects() {
   const projects = [
@@ -10,6 +11,7 @@ function Projects() {
     { id: 2, image: html, title: "Portfolio" },
     { id: 3, image: sall, title: "Projet Laravel" },
     { id: 4, image: shop, title: "Projet React" },
+    { id: 5, image: isep, title: "Projet Figma" },
   ];
 
   return (
